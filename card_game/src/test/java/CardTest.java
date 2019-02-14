@@ -7,17 +7,24 @@ public class CardTest {
     Card card;
 
     @Before
-    public void before(){
+    public void before() {
         card = new Card(SuitType.SPADES, RankType.SEVEN);
     }
 
     @Test
-    public void canGetSuit(){
+    public void canGetSuit() {
         assertEquals(SuitType.SPADES, card.getSuit());
     }
 
     @Test
-    public void canGetRank(){
+    public void canGetRank() {
         assertEquals(RankType.SEVEN, card.getRank());
     }
+
+    @Test
+    public void sevenHasValueSeven() {
+        assertEquals(7, card.getValueFromEnum());
+    }
+
 }
+
