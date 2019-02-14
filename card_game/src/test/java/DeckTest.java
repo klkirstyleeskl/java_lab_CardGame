@@ -17,4 +17,12 @@ public class DeckTest {
     public void cardsArrayStartsEmpty(){
         assertEquals(0, deck.checkLength());
     }
+
+    @Test
+    public void cardsArrayHasAllCards(){
+        deck.createDeck();
+        assertEquals(52, deck.checkLength());
+    }
+
+    
 }
