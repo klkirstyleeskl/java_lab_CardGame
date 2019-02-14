@@ -29,6 +29,11 @@ public class Deck {
      Collections.shuffle(cards);
  }
 
+ public Card dealCard(){
+     return this.cards.get(0);
+ }
+
+
 
 
 
